@@ -31,3 +31,16 @@ Description
 #include "dimensionedConstants.H"
 
 Foam::rsocSpecie::rsocSpecie(Istream& is):
+    name_(is),
+    molWeight_(readScalar(is)),
+    nElectrons_(readScalar(is)),
+    rSign_(readLabel(is)),
+    hForm_(readScalar(is)),
+    sForm_(readScalar(is))
+{
+    is.check("rsocSpecie::rsocSpecie(Istream& is)");
+}
+// * * * * * * * * * * * * * * * Ostream Operator  * * * * * * * * * * * * * //
+Foam::Ostream& Foam::operator<<(Ostream& os,const rsocSpecie& st){
+    
+}
