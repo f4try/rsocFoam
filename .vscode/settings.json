@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "rsocFoam.C": "cpp",
+        "iomanip": "cpp",
+        "rsocSpecie.C": "cpp"
+    }
+}
